@@ -1,0 +1,83 @@
+#hero, #biografia, #discografia {
+    height: 100vh;
+}
+
+#hero .container {
+    margin-top: 100px;
+}
+
+#myCarousel {
+    height: 300px;
+    background-color: black;
+}
+
+#myCarousel .carousel-inner {
+    height: 300px;
+}
+
+#myCarousel .carousel-inner .carousel-item>blockquote{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 90px;
+}
+
+#myCarousel .carousel-inner .carousel-item>blockquote>p{
+    font-size: 1.2em;
+}
+
+#biografia .container .card {
+    margin-top: 70px;
+    background-color: transparent;
+}
+
+#biografia .container .card .card-header > img{
+    background-color: red;
+    box-shadow: 0px 0px 35px 20px;
+    border-radius: 5px;
+}
+
+#discografia .row {
+    margin-top: 70px;
+}
+
+#discografia .row .card {
+    background-color: transparent;
+}
+
+#discografia .row .card:hover {
+    transition: all 1s ease;
+    transform: scale(1.1);
+    background-color: var(--fg);
+}
+
+#discografia .row .card:hover .card-title{
+    transition: all 1s ease;
+    color: var(--bg) !important;
+}
+
+#similares .row {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#similares .row .card {
+    background-color: transparent;
+}
+#similares .row .card .card-footer {
+    color: var(--fg);
+}
+#similares .row .card:hover {
+    transition: all 1s ease;
+    transform: scale(1.1);
+    background-color: var(--fg);
+}
+
+#similares .row .card:hover .card-title {
+    transition: all 1s ease;
+    color: var(--bg) !important;
+}
+
+#similares .row .card:hover .card-footer {
+    transition: all 1s ease;
+    color: var(--bg) !important;
+}

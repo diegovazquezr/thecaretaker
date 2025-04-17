@@ -1,0 +1,64 @@
+:root {
+    --bg-dark:rgb(20, 20, 20);
+    --font-text: 1.2em;
+    --fg-dark: whitesmoke
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: var(--bg-dark);
+        --fg: var(--fg-dark);
+    }
+    body {
+        background-color: var(--bg-dark);
+        color: var(--fg-dark) !important;
+    }
+
+    h1,h2,h3,h4,h5,h6,p {
+        color: var(--fg-dark) !important;
+    }
+
+}
+
+.container > nav {
+    margin-top: 50px;
+}
+
+.container > nav, .container .navbar-brand {
+    font-size: var(--font-text);
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: var(--font-text);
+}
+
+.btn:hover {
+    transition: all 1s ease;
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer .container > a {
+    font-size: 2em;
+    color: var(--fg);
+}
