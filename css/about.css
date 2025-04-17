@@ -13,7 +13,7 @@ h3 {
 .card-transicion:hover {
     transition: all 1s ease;
     transform: scale(1.1);
-    background-color: whitesmoke !important;
+    background-color: var(--fg) !important;
 }
 .card-transicion:hover .card-body > h4,
 .card-transicion:hover .card-icon {
@@ -22,7 +22,6 @@ h3 {
 }
 
 #proyectos .container .row .card > img{
-    background-color: red;
     height: 250px;
 }
 

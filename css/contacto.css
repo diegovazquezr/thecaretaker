@@ -14,7 +14,6 @@ body {
     font-size: var(--font-text);
 }
 #contacto .container > form > input{
-    background-color: red;
     margin-bottom: 20px;
 }
 
