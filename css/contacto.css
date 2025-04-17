@@ -3,7 +3,8 @@
 } */
 
 body {
-    height: 1000%;
+    /* height: 1000%; */
+    height: 90vh;
     margin: 0;
 }
 
