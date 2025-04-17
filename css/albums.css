@@ -1,0 +1,12 @@
+#every-list .list-group-item{
+    background-color: transparent;
+    border: none;
+}
+
+#albumes .container .blockquote > p{
+    font-size: 0.7em;
+}
+
+#albumes {
+    margin-bottom: 20px;
+}
