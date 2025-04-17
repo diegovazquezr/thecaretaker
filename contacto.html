@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contacto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">The Caretaker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Discografía
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">The Caretaker</a></li>
+                                <li><a class="dropdown-item" href="#">Leyland Kirby</a></li>
+                                <li><a class="dropdown-item" href="#">The Stranger</a></li>
+                                <li><a class="dropdown-item" href="#">V/Vm</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section id="contacto">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <form action="mailto:urielvr00015@gmail.com">
+                <div class="form-group">
+                    <label class="mb-2" for="nombre">Nombre</label>
+                    <div class="input-group">
+                        <span class="input-group-text fa fa-user"></span>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="mb-2" for="correo">Correo</label>
+                    <div class="input-group">
+                        <span class="input-group-text fa fa-envelope"></span>
+                        <input type="email" class="form-control" id="correo" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="mb-2" for="mensaje">Mensaje</label>
+                    <div class="input-group">
+                        <span class="input-group-text fa fa-comment"></span>
+                        <textarea name="mensaje" id="mensaje" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer class="footer fixed-bottom">
+        <div class="container text-center">
+            <a class="btn fa fa-github" href="https://github.com/diegourielvr"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

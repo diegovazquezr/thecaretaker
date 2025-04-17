@@ -1,0 +1,23 @@
+/* #contacto {
+    height: 100vh;
+} */
+
+body {
+    height: 1000%;
+    margin: 0;
+}
+
+#contacto .container > form{
+    width: 400px;
+    margin: 0 auto;
+    font-size: var(--font-text);
+}
+#contacto .container > form > input{
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+#contacto .container > form > button {
+    margin-top: 20px;
+    float: right;
+}
