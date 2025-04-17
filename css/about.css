@@ -1,0 +1,31 @@
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#proyectos .container .row .card {
+    background-color: transparent;
+}
+
+.card {
+    background-color: transparent !important;
+}
+
+.card-transicion:hover {
+    transition: all 1s ease;
+    transform: scale(1.1);
+    background-color: var(--fg) !important;
+}
+.card-transicion:hover .card-body > h4,
+.card-transicion:hover .card-icon {
+    transition: all 1s ease;
+    color: var(--bg) !important;
+}
+
+#proyectos .container .row .card > img{
+    height: 250px;
+}
+
+.card-icon {
+    font-size: 100px;
+    color: var(--fg);
+}

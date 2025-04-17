@@ -3,7 +3,8 @@
 } */
 
 body {
-    height: 1000%;
+    /* height: 1000%; */
+    height: 90vh;
     margin: 0;
 }
 
@@ -13,7 +14,6 @@ body {
     font-size: var(--font-text);
 }
 #contacto .container > form > input{
-    background-color: red;
     margin-bottom: 20px;
 }
 

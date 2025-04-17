@@ -1,7 +1,18 @@
 :root {
     --bg-dark:rgb(20, 20, 20);
+    --fg-dark: whitesmoke;
+    --bg-light: whitesmoke;
+    --fg-light:rgb(20, 20, 20);
     --font-text: 1.2em;
-    --fg-dark: whitesmoke
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: var(--bg-light);
+        --fg: var(--fg-light);
+    }
+    body {
+        background: linear-gradient(180deg, rgb(231, 231, 231), rgb(226, 226, 226));
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,22 +21,35 @@
         --fg: var(--fg-dark);
     }
     body {
-        background-color: var(--bg-dark);
-        color: var(--fg-dark) !important;
+        /* color: var(--fg-dark) !important; */
+        background: linear-gradient(180deg, rgb(0, 0, 0), rgb(41, 41, 41));
     }
+}
 
-    h1,h2,h3,h4,h5,h6,p {
-        color: var(--fg-dark) !important;
-    }
-
+h1,h2,h3,h4,h5,h6,p,body {
+    color: var(--fg) !important;
 }
 
 .container > nav {
     margin-top: 50px;
 }
 
-.container > nav, .container .navbar-brand {
-    font-size: var(--font-text);
+.container > nav,
+.container .navbar-brand,
+.container .navbar .nav-item > a {
+    /* font-size: var(--font-text); */
+    font-size: 1.1em;
+    color: var(--fg);
+}
+
+.container .navbar .nav-link:hover,
+.container .navbar .navbar-brand:hover {
+    transition: all 1s ease;
+    transform: scale(1.1);
+}
+
+.container .navbar .navbar-toggler-icon {
+    filter: invert(50%);
 }
 
 h1 {
@@ -54,11 +78,11 @@ p {
 }
 
 .footer {
-    background-color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: var(--fg);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .footer .container > a {
     font-size: 2em;
-    color: var(--fg);
+    color: var(--bg);
 }
